@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sytyles.css">
+    <title>Guessing game</title>
+</head>
+<body>
+    <h1>Guess a number</h1>
+    <h4>0 - 100</h4>
+    <br>
+    <br>
+    <p id="corro" class="center">Guess a number</p>
+    <br>
+    <br>
+    <br>
+    <span id="attempts">Attempts: <a id="clicks">0</a></span>
+    <br>
+    <div class="sliderbox">
+        <input type="range" min="0" max="100" value="50" id="slider">
+    </div>
+    <div class="center">
+    <span id="f"></span>
+    <br>
+    <br>
+    <input type="submit" name="check" id="check" value="Check" onclick="numcheck(), onClick()
+    ">
+    <button type="button" onclick="refreshPage()" id="playagain" style="display: none;">Play again</button>
+
+</div>
+    <script src="./sandbox.js"></script>
+</body>
+</html>
