@@ -1,0 +1,25 @@
+.cardcars {
+  width: 300px;
+}
+.carInfo {
+  border: solid black 1px;
+  width: 325px;
+}
+th {
+  border: solid black 1px;
+  padding: 1px;
+}
+td {
+  border: solid black 1px;
+  text-align: start;
+  padding: 2px;
+}
+.center {
+  margin-left: 46%;
+}
+thead {
+  text-align: center;
+}
+td:nth-child(odd) {
+  width: 30%;
+}
