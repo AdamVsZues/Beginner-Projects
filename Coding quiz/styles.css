@@ -1,0 +1,29 @@
+body{
+    font-size: large;
+}
+
+#Name{
+    border: 0px;
+    border-bottom:black 1px solid;
+    margin-right: 5%;
+}
+
+#Date{
+    border: 0px;
+    border-bottom:black 1px solid;
+}
+
+.Answer{
+    background-color: #1EFC1E;
+}
+
+.push{
+    margin-left: 5%;
+}
+
+#scorebox{
+    margin-left: 90%;
+    display: inline-block;
+    margin-top: -75px;
+    display: none;
+}
