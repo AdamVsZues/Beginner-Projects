@@ -1,0 +1,24 @@
+table {
+  border-collapse: collapse;
+}
+th {
+  border: solid white 1px;
+}
+td {
+  border: solid white 1px;
+}
+.w-10 {
+  width: 15%;
+  margin-left: 10%;
+  position: static;
+}
+.max-h {
+  max-height: 300px;
+}
+input{
+  width: 163px;
+  height: 30px;
+}
+.stay{
+  height: 152px;
+}
