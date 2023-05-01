@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Payroll Calculator</title>
+</head>
+<body>
+    <div style="margin-left: 150px; margin-top:25px;">
+        <!-- Making a table with 4 main sections containing seprate info -->
+        <table>
+            <tr> <!--row 1-->
+                <td colspan="3" style="font-weight: bold; font-size: 20px; text-align: center;">BlockBuster</td>
+                <td class="noright"></td>
+                <td class="noright noleft">Pay Period</td>
+                <td class="noleft">Check#</td>
+            </tr>
+            <tr> <!--row 2-->
+                <td colspan="3" rowspan="2" class="nobottom" style="text-align: center; font-size: 17px;"> <span id="address" style="font-weight: bold;"> Address: </span> <br> 211 NE Revere Avenue Bend, Oregon</td>
+                <td class="noright"></td>
+                <td class="noleft noright">Start date
+                    <br class="deepup">
+                    <br>
+                    End date
+                </td>
+                <td class="noleft">
+                    <input type="date" name="start" id="startdate">
+                    <br>
+                    <br>
+                    <input type="date" name="end" id="enddate">
+                </td>
+            </tr>
+            <tr> <!--row 3-->
+                <td class="noright"></td>
+                <td class="noleft noright">Todays Date</td>
+                <td class="noleft"> <p id="irldate"></p></td>
+            </tr>
+            <tr> <!--row 4-->
+                <td colspan="3" class="deepr deepup"><label for="hours">Hours:</label> <input type="number" name="hours" id="hours"></td>
+                <td colspan="2" class="deepup noright" style="text-align: end; font-size:large">Social Security:</td>
+                <td class="deepup noleft"> <span id="socials" ></span> </td>
+            </tr>
+            <tr> <!--row 5-->
+                <td colspan="3" class="deepr"><label for="payrate">Payrate:</label> <input type="number" name="payrate" id="payrate"></td>
+                <td colspan="2" class="noright" style="text-align: end; font-size:large">Medicare:</td>
+                <td class="noleft"> <span id="medicare" ></span> </td>
+            </tr>
+            <tr> <!--row 6-->
+                <td colspan="3" class="deepr"> <label for="grosspay" id="grosspaylabel">Gross pay:</label> <span id="grosspay" ></span></td>
+                <td style="font-size:large; text-align: center;">Net</td>
+                <td style="text-align: end; font-size:large" class="noright">Net pay:</td>
+                <td class="noleft">
+                    <span id="netpay"></span>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" name="submit" id="submit" value="Calculate" onclick="calc()">
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
